@@ -1,13 +1,47 @@
-.trexfrog {
-    width: 50vw;
-    border: solid;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.background {
-    width: 100vw;
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trexfrog {
+    width: 80%;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 1%;
+    border: solid;
+    border-color: white;
+}
+
+.title {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 100px;
+    margin-top: 10px;
+    color: white;
+}
+
+.entersite {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    background-color: azure;
+    border: solid;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-top: 40px;
 }
