@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>love you 3000</title>
+    </head>
+<body>
+    <div>
+        <img onmouseenter="playAudio2()" onmouseleave="playAudio1()" class="trexfrog" src="./src/t-rex-frog.gif" />
+        <img class="background" src="./src/background.gif" />
+    </div>
+</body>
+</html>
+
+<script>
+    const audio1 = new Audio('./src/trex-frog-sound.mp3');
+    audio1.volume = 0.25;
+    const audio2 = new Audio('./src/trex-frog-sound-BASSBOOSTED.mp3');
+    audio2.volume = 1;
+    audio1.play();
+    function playAudio2() {
+        audio2.currentTime = audio1.currentTime
+        audio2.play();
+        audio1.pause();
+    }
+    function playAudio1() {
+        audio1.currentTime = audio2.currentTime
+        audio1.play();
+        audio2.pause();
+    }
+</script>
